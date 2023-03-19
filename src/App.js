@@ -51,7 +51,11 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>To-Do List</h1>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">To-Do List</a>
+          </li>
+        </ul>
       </header>
       <Form todos={todos} setTodos={setTodos}
             inputText={inputText} setInputText={setInputText}
